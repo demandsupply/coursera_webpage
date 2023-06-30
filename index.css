@@ -61,6 +61,11 @@ li {
     list-style: none;
 }
 
+p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
 /* NAV */
 
 .nav-hidden {
@@ -130,12 +135,13 @@ li {
 
 .button {
     padding: 5px 10px;
-    border: 2px solid #224fe2;
+    border: 3px solid #224fe2;
     border-radius: 4px;
     background-color: #224fe2;
     display: flex;
     align-items: center;
     gap: 6px;
+    justify-content: center;
 }
 
 .button i {
@@ -216,5 +222,64 @@ form button i {
 
 .button.blue:hover {
     background-color: #15359f;
+    border: solid 3px #15359f;
     transition: 0.3s;
+}
+
+/* Section one */
+
+.section-one-container {
+    width: 100%;
+}
+
+.section-one {
+    width: 1300px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.section-one > div {
+    width: 600px;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 24px;
+}
+
+.section-one .buttons-container {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.buttons-container .button:first-of-type{
+    width: 40%;
+}
+
+.buttons-container .button:last-of-type {
+    width: 60%;
+}
+
+.button.white {
+    color: #224fe2;
+    background-color: #fff;
+}
+
+.wide {
+    padding: 20px 32px;
+}
+
+.button.white:hover {
+    background-color: #ecf3f7;
+    transition: 0.3s;
+}
+
+.section-one img {
+    width: 400px;
 }
