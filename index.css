@@ -330,3 +330,68 @@ h1 {
 .collaborators-container .img7 {
     height: 24px;
 }
+
+/* Section Three */
+
+:root {
+    --underline-height: .3em;
+    --transition-duration: .5s;
+}
+
+.section-three {
+    width: 1300px;
+    margin: auto;
+    height: 2000px;
+}
+
+.careers-menu {
+    display: flex;
+    width: 1300px;
+    position: relative;
+    white-space: nowrap;
+    background: #fff;
+    padding: var(--underline-height) 0;
+    margin: 2em 0;
+    box-shadow: 0 1em 2em rgba(black, .05);
+    border: 1px solid #000;
+}
+
+.underline-back {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 100%;
+    background-color: #efefef;
+}
+
+.underline-atop {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 12.5%;
+    background: #224fe2;
+    mix-blend-mode: multiply;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.careers-menu p {
+    font-size: 16px;
+    display: inline-block;
+    z-index: 2;
+    width: 12.5%;
+    padding: 1em 0;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid #000;
+}
+
+.careers-menu p:hover {
+    background-color: #ecf3f7;
+    color: #224fe2;
+}
