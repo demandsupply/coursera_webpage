@@ -395,3 +395,97 @@ h1 {
     background-color: #ecf3f7;
     color: #224fe2;
 }
+
+.careers-menu p:focus {
+    color: #224fe2;
+}
+
+.aa {
+    color: #a01010;
+}
+
+.careers-window {
+    width: 100%;
+    border: 2.5px solid #efefef;
+    border-radius: 10px;
+    display: flex;
+}
+
+.careers-window p {
+    color: #777;
+    font-size: 18px;
+}
+
+.careers-window h3 {
+    font-size: 22px;
+    margin: 24px 0 12px 0;
+}
+
+.windowa h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.windowa {
+    width: 40%;
+    padding: 40px 6px 0 56px;
+}
+
+.wgraphs-container {
+    padding-bottom: 24px;
+    border-bottom:  1.5px solid #efefef;
+}
+
+.wgraph1,
+.wgraph2 {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.value {
+    /* position: absolute; */
+    margin-left: 16px;
+}
+
+.graph1, 
+.graph2 {
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.graph1 {
+    background-color: #efefef;
+}
+
+.graph2 {
+    background-color: #224fe2;
+    color: #fff;
+}
+
+.notes-container {
+    margin: 24px 0;
+}
+
+.notes-container > div {
+    margin-bottom: 24px;
+    display: flex;
+    color: #777;
+    font-size: 16px;
+}
+
+.notes-container .value {
+    color: #000;
+    margin-left: 4px;
+} 
+
+.experience-container {
+    display: flex;
+    gap: 12px;
+}
+
+.experience-container img {
+    width: 100px;
+    height: fit-content;
+}

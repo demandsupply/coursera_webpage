@@ -7,3 +7,9 @@ function ul(index) {
         underlines[i].style.transform = 'translate3d('+ index * 100 + '%,0,0)';
     }
 }
+
+const aa = document.querySelector('.aa');
+
+aa.addEventListener('click', () => {
+    aa.style.color = '#000';
+});
