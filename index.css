@@ -55,6 +55,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 li {
@@ -342,6 +343,7 @@ h1 {
     width: 1300px;
     margin: auto;
     height: 2000px;
+
 }
 
 .careers-menu {
@@ -406,9 +408,21 @@ h1 {
 
 .careers-window {
     width: 100%;
-    border: 2.5px solid #efefef;
+    border-top: 2.5px solid #efefef;
+    border: 3px solid #efefef;
+    padding: 24px;
     border-radius: 10px;
+}
+
+.careers-windows-container {
+    margin-top: 12px;
     display: flex;
+    gap: 24px;
+}
+
+.wtitle {
+    padding: 40px 6px 0 56px;
+    font-size: 24px;
 }
 
 .careers-window p {
@@ -428,7 +442,7 @@ h1 {
 
 .windowa {
     width: 40%;
-    padding: 40px 6px 0 56px;
+    padding: 0 6px 0 56px;
 }
 
 .wgraphs-container {
@@ -489,3 +503,96 @@ h1 {
     width: 100px;
     height: fit-content;
 }
+
+.windowb {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.windowb h3 {
+    margin-left: 16px;
+}
+
+.certificates-container {
+    display: flex;
+}
+
+.certificate {
+    margin: 0 10px 16px 10px;
+    width: 360px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.certificate h4 {
+    font-size: 19px;
+}
+
+.certificate > img {
+    border-radius: 8px 8px 0 0;
+    width: 360px;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.certificate-description {
+    /* border: 1px solid #000; */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.certificate-title {
+    display: flex;
+    gap: 8px;
+}
+
+.certificate-rate {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.certificate-rate i {
+    color: #224fe2;
+}
+
+.certificate-all {
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    margin-top: 24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.certificate-all h4 {
+    font-size: 18px;
+}
+
+.certificate-all:hover h4 {
+    text-decoration: underline;
+}
+
+.careers-footer {
+    width: 1100px;
+    border-top: 2.5px solid #efefef;
+    padding-top: 40px;
+    margin: 40px auto;
+}
+
+.careers-footer p {
+    color: #777;
+    font-size: 16px;
+}
+
