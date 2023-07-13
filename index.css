@@ -596,3 +596,100 @@ h1 {
     font-size: 16px;
 }
 
+/* Section Four */
+
+.section-four-a,
+.section-four-b,
+.section-four-c {
+    width: 1300px;
+    margin: auto;
+}
+
+.slides-container {
+    position: relative;
+    margin: 48px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    border: 1px solid #000;
+}
+
+.button-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container i {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.fa-chevron-left {
+    margin-left: -36px;
+}
+
+.fa-chevron-right {
+    margin-right: -56px;
+}
+
+.violet {
+    color: #382d8b;
+}
+
+.section-four-a h2 {
+    font-size: 32px;
+    margin: 16px 0;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #efefef;
+}
+
+.section-four-a .card > img {
+    width: 298px;
+    border-radius: 8px 8px 0 0;
+}
+
+.section-four-a .card p {
+    font-size: 15px;
+    color: #777;
+}
+
+.section-four-a .card-description {
+    padding: 20px;
+}
+
+.section-four-a .card-title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px 0;
+    gap: 8px;
+}
+
+.section-four-a .card-title img {
+    border-radius: 4px;
+}
+
+.section-four-a h4 {
+    font-size: 22px;
+}
+
+.section-four-a .card-degree {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 20px 0 6px 0;
+    color: rgb(32, 119, 186);
+}
+
+
+.section-four-a .card-degree p {
+    color: rgb(32, 119, 186);
+    
+}
