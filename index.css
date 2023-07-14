@@ -614,7 +614,7 @@ h1 {
     border: 1px solid #000;
 }
 
-.button-container {
+.carousel-buttons-container {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -623,19 +623,31 @@ h1 {
     align-items: center;
 }
 
-.button-container i {
+.carousel-button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+}
+
+.carousel-button i {
     font-size: 28px;
     cursor: pointer;
     padding: 12px;
 }
 
-.fa-chevron-left {
-    margin-left: -36px;
+.button-left {
+    left: -36px;
 }
 
-.fa-chevron-right {
-    margin-right: -56px;
+.button-right {
+    right: -56px;;
 }
+
+.carousel-button:hover i {
+    color: #224fe2;
+    transition: .3s;
+}
+
 
 .violet {
     color: #382d8b;
@@ -648,6 +660,7 @@ h1 {
 
 .card {
     width: 300px;
+    border-radius: 8px 8px 0 0;
     border: 1px solid #efefef;
 }
 
