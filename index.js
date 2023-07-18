@@ -29,7 +29,7 @@ buttonNext.addEventListener('click', () => console.log('well done!'));
 // slidesContainer.style.transform = 'translate(-50%)';
 
 let currentSlide = 0;
-const numSlides = (slidesContainer.children.length/4);
+const numSlides = (slidesContainer.children.length/4 -1);
 
 function handlePrev() {
     if (currentSlide < 0) {
@@ -37,7 +37,7 @@ function handlePrev() {
     }
     else if (currentSlide > 0) {
         currentSlide = (currentSlide -1) % numSlides;
-        slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
+        slidesContainer.style.transform = `translateX(${currentSlide * -102.5}%)`;
     }
 }
 
@@ -48,6 +48,6 @@ function handleNext() {
     else if (currentSlide < numSlides) {
         currentSlide = currentSlide + 1;
         // slidesContainer.style.transform = `translateX(${currentSlide * -(200/(slidesContainer.children.length))}%)`;
-        slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
+        slidesContainer.style.transform = `translateX(${currentSlide * -102.5}%)`;
     }
 }
