@@ -605,11 +605,14 @@ h1 {
     margin: auto;
 }
 
-.slides-container {
+.carousel {
+    --current-slide: 0;
     position: relative;
+}
+
+.slides-container {
     margin: 48px auto;
     display: flex;
-    flex-wrap: wrap;
     gap: 33px;
     border: 1px solid #000;
 }
@@ -621,6 +624,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .carousel-button {
@@ -646,6 +650,11 @@ h1 {
 .carousel-button:hover i {
     color: #224fe2;
     transition: .3s;
+}
+
+.overflow {
+    position: relative;
+    /* overflow: hidden; */
 }
 
 
