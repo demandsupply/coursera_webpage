@@ -663,7 +663,8 @@ h1 {
     color: #382d8b;
 }
 
-.section-four-a h2 {
+.section-four-a h2,
+.section-five h2 {
     font-size: 32px;
     margin: 16px 0;
 }
@@ -717,7 +718,7 @@ h1 {
     
 }
 
-.section-four-a .explore {
+.section-four-a .exploredegree {
     border: 1px solid #000;
     width: fit-content;
     margin: 32px auto;
@@ -728,10 +729,59 @@ h1 {
     gap: 12px;
 }
 
-.section-four-a .explore:hover {
+.section-four-a .exploredegree:hover {
     color: #15359f;
 }
 
-.section-four-a .explore:hover strong {
+.section-four-a .exploredegree:hover strong {
     text-decoration: underline;
+}
+
+.section-five-container {
+    width: 100%;
+}
+
+.section-five {
+    width: 1360px;
+    margin: 100px auto;
+}
+
+.explorecoursera-container {
+    width: 100%;
+    margin: 56px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26.6px;
+}
+
+.explore-card {
+    width: 320px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 11px rgba(31, 31, 31, 0.12);
+    /* box-shadow: rgba(31, 31, 31 0.12) 0px 1px 4px; */
+    transition: 0.5s;
+}
+
+.explore-card:hover {
+    box-shadow: 0 0 11px rgba(31, 31, 31, 0.32);
+}
+
+.explore-card img{
+    width: 90px;
+    height: 90px;
+    object-fit: fill;
+    object-position:bottom;
+}
+
+.explore-card-title {
+    padding: 12px;
+}
+
+.explore-card p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 700;
 }
