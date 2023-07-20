@@ -619,7 +619,7 @@ h1 {
 }
 
 .slides-container > .card {
-    display: none;
+    /* display: none; */
 }
 
 .carousel-buttons-container {
@@ -686,8 +686,9 @@ h1 {
 }
 
 .section-four-a h2,
-.section-five h2 {
-    font-size: 32px;
+.section-five h2,
+.section-six h2 {
+    font-size: 40px;
     margin: 16px 0;
 }
 
@@ -808,4 +809,53 @@ h1 {
     color: #777;
     font-size: 16px;
     font-weight: 700;
+}
+
+/*  Section six */
+
+.section-six-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+    background-color: #eef2ff;
+}
+
+.section-six {
+    position: absolute;
+    width: 1300px;
+    margin: 200px auto;
+    display: flex;
+    gap: 32px;
+}
+
+.section-six img {
+    position: relative;
+    top: -230px;
+    left: 24%;
+}
+
+.s6b {
+    position: relative;
+    left: 25%;
+    bottom: 120px;
+}
+
+.s6b p {
+    font-size: 19px;
+    line-height: 32px;
+    width: 450px;
+}
+
+.s6b a {
+    color: #224fe2;
+}
+
+.s6b p a:hover {
+    text-decoration: underline;
+}
+
+.s6b .button {
+    width: fit-content;
+    margin-top: 24px;
+    padding: 10px 16px;
 }
