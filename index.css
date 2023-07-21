@@ -859,3 +859,58 @@ h1 {
     margin-top: 24px;
     padding: 10px 16px;
 }
+
+/* Section seven */
+
+.section-seven-container {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.section-seven {
+    width: 1300px;
+    margin: auto;
+}
+
+.section-seven h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.section-seven h3 {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.community-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community .c-name {
+    font-size: 28px;
+    color: #382d8b;
+    margin: 12px 0;
+}
+
+.community .c-line {
+    width: 5em;
+    margin: 16px 0;
+    border-bottom: 2px solid #2a73cc;
+}
+
+.community p {
+    width: 320px;
+    margin: 12px 0;
+    padding: 0 16px;
+    text-align: center;
+}
