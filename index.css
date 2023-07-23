@@ -914,3 +914,78 @@ h1 {
     padding: 0 16px;
     text-align: center;
 }
+
+/* Section eight */
+
+.section-eight-container {
+    width: 100%;
+}
+
+.section-eight {
+    width: 1300px;
+    margin: 200px auto;
+}
+
+.section-eight h1 {
+    font-size: 48px;   
+}
+
+.section-eight .button {
+    width: fit-content;
+    padding: 12px 24px;
+    margin: 24px 0;
+}
+
+.section-eight-a,
+.section-eight-b {
+    display: flex;
+}
+
+.s8-div {
+    width: 650px;
+}
+
+.s8-div span a {
+    color: #224fe2;
+}
+
+.s8-div span a {
+    text-decoration: underline;
+}
+
+.s8-div span a:hover {
+    color: #15359f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.s8-matrix {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #2a73cc; */
+}
+
+.matrix {
+    width: 216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #efefef;
+}
+
+.section-eight-b {
+    margin-top: 200px;
+}
+
+.section-eight-b img {
+    width: 650px;
+    height: fit-content;
+    padding: 0 95px 0 5px;
+} 
+
+.section-eight-b .s8-div {
+    width: 650px;
+    padding: 50px;
+    margin-left: -25px;
+}
