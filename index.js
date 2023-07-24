@@ -14,6 +14,21 @@ aa.addEventListener('click', () => {
     aa.style.color = '#000';
 });
 
+
+// Create the function which show one box and hide the others
+
+function shoWindow(id) {
+    if (document.getElementById) {
+        var boxId = document.getElementById(id);
+        var allboxes = document.getElementsByClassName("careers-window");
+        for(var i=0; i<allboxes.length; i++) {
+            allboxes[i].style.display = "none";
+        }
+        boxId.style.display = "block";
+    }
+    return false;
+}
+
 // Create the carousel function
 
 const buttonPrev = document.querySelector('[data-carousel-button-left]');
@@ -51,3 +66,53 @@ function handleNext() {
         slidesContainer.style.transform = `translateX(${currentSlide * -102.5}%)`;
     }
 }
+
+
+
+
+
+// Connect the dots
+// const dotOne = document.querySelector('[data-dot-one]');
+// const dotTwo = document.querySelector('[data-dot-two]');
+// const dotThree = document.querySelector('[data-dot-three]');
+
+
+// dotOne.addEventListener('click', () => console.log('clicked-one'));
+// dotTwo.addEventListener('click', () => console.log('clicked-two'));
+// dotThree.addEventListener('click', () => console.log('clicked-three'));
+
+
+// const dot = document.querySelector('[data-carousel-dot]');
+
+
+// var section = 1;
+// displaySection(section);
+
+// function nextSection(n) {
+//     displaySection(section += n);
+// }
+
+// function currentSection(n) {
+//     displaySection(section = n);
+// }
+
+// function displaySection(n) {
+//     var i;
+//     var section = document.getElementsByClassName("section");
+//     var dots = document.getElementsByClassName("dot");
+
+//     if (n > section.length) {
+//         section = 1;
+//     }
+
+//     if (n < 1) {
+//         section = section.length;
+//     }
+
+//     for (i=0; i<section.length; i++) {
+//         dots[i].className = dots[i].className.replace("active", "");
+//     }
+
+    // section[section = 1].style.display = "block";
+    // dots[section = 1].className += "active";
+// }

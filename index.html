@@ -94,8 +94,8 @@
                     <div class="careers-menu">
                         <div class="underline-atop"></div>
                         <div class="underline-back"></div>
-                        <p class="aa" onclick="ul(0)">Project Manager</p>
-                        <p onclick="ul(1)">Data Analyst</p>
+                        <p class="aa" onclick="ul(0); shoWindow('window-one')">Project Manager</p>
+                        <p onclick="ul(1); shoWindow('window-two')">Data Analyst</p>
                         <p onclick="ul(2)">UX Designer</p>
                         <p onclick="ul(3)">IT Support Specialist</p>
                         <p onclick="ul(4)">Digital Marketer</p>
@@ -103,7 +103,7 @@
                         <p onclick="ul(6)">Front-End Developer</p>
                         <p onclick="ul(7)">Bookkeeper</p>
                     </div>
-                    <div class="careers-window window1">
+                    <div class="careers-window main window1" id="window-one">
                         <div class="wtitle">
                             <h2>Project Manager</h2>
                             <p>Oversee the planning and execution of projects to ensure they’re successful</p>
@@ -197,6 +197,89 @@
                         </div>
                     </div>
                     <!-- CREATE OTHER WINDOWS -->
+                    <div class="careers-window window2" id="window-two">
+                        <div class="windowa">
+                            <div class="wtitle">
+                                <h2>Data Analyst</h2>
+                                <p>Oversee the planning and execution of projects to ensure they’re successful</p>
+                            </div>
+                            <div class="wdescription">
+                                <h3>Median entry-level salary</h3>
+                                <div class="wgraphs-container">
+                                    <div class="wgraph1">
+                                        <div class="graph1" style="width: 50%;"><strong class="u300">All occupations</strong></div> 
+                                        <div class="value"><strong class="u300">$37,960*</strong></div>
+                                    </div>
+                                    <div class="wgraph2">
+                                        <div class="graph2" style="width: 100%;"><strong class="u500">Project Manager</strong></div> 
+                                        <div class="value"><strong class="u300">$86,500**</strong></div>
+                                    </div>
+                                </div>
+                                <div class="notes-container">
+                                    <div><strong class="u500">Job openings:</strong>
+                                        <div class="value"><strong class="u300">477.722**</strong></div>
+                                    </div>
+                                    <div><strong class="u500">Projected 10 year growth:</strong>
+                                        <div class="value"><strong class="u300">+12,6%***</strong></div>
+                                    </div>
+                                </div>
+                                <div class="experience-container">
+                                    <img src="./images/Career-1a.avif" alt="">
+                                    <p>
+                                        "Earning my Google Project Management: Professional Certificate 
+                                        is one of the biggest accomplishments I’ve made in my education, 
+                                        and it was a key stepping stone to my new career."
+                                        <br>
+                                        <br>
+                                        – Adrienne
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="windowb">
+                            <h3>Recommended Professional Certificates</h3>
+                            <div class="certificates-container">
+                                <a href="https://www.coursera.org/professional-certificates/google-project-management?trk_ref=camodule" class="certificate">
+                                    <img src="images/Career-1b.avif" alt="">
+                                    <div class="certificate-description">
+                                        <div class="certificate-title">
+                                            <img src="./images/logo-google.avif" alt="">
+                                            <p>Google</p>
+                                        </div>
+                                        <h4>Google Project Management:</h4>
+                                        <p>Skills you'll gain: Organizational Culture, Career Development, Strategic Thinking, Change...</p>
+                                        <div class="certificate-rate">
+                                            <h4>4.8</h4>
+                                            <i class="fa fa-star"></i>
+                                            <p>(82,9k reviews)</p>
+                                        </div>
+                                        <p>Beginner - Professional Certificate - 6 months</p>
+                                    </div>
+                                </a>
+                                <a href="https://www.coursera.org/professional-certificates/ibm-project-manager?trk_ref=camodule" class="certificate">
+                                    <img src="./images/Career-1c.avif" alt="">
+                                    <div class="certificate-description">
+                                        <div class="certificate-title">
+                                            <img src="" alt="">
+                                            <p></p>
+                                        </div>
+                                        <h4></h4>
+                                        <p>Skills you'll gain: </p>
+                                        <div class="certificate-rate">
+                                            <h4></h4>
+                                            <i class="fa fa-star"></i>
+                                            <p>( reviews)</p>
+                                        </div>
+                                        <p>Beginner - Professional Certificate - 6 months</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="https://www.coursera.org/professional-certificates?trk_ref=camodule">
+                                <h4>Explore all certificates</h4>
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                     <!-- <div class="careers-window window1">
                         <div class="windowa">
                             <div class="wtitle">
@@ -294,13 +377,13 @@
                         <button class="carousel-button button-right" data-carousel-button-right><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="dots-container">
-                        <span class="dot" onclick="currentSlideSection(1)" data-carousel-dot></span>
-                        <span class="dot" onclick="currentSlideSection(2)" data-carousel-dot></span>
-                        <span class="dot" onclick="currentSlideSection(3)" data-carousel-dot></span>
+                        <span class="dot dot-one" onclick="currentSlideSection(1)" data-carousel-dot data-dot-one></span>
+                        <span class="dot dot-two" onclick="currentSlideSection(2)" data-carousel-dot data-dot-two></span>
+                        <span class="dot dot-three" onclick="currentSlideSection(3)" data-carousel-dot data-dot-three></span>
                     </div>
                     <div class="overflow">
                         <div class="slides-container" data-slides>
-                            <a href="https://www.coursera.org/degrees/imba" class="card section section-1">
+                            <a href="https://www.coursera.org/degrees/imba" class="card section section-1 carousel-item active">
                                 <img src="./images/master-1.avif" alt="">
                                 <div class="card-description">
                                     <div class="card-title">
@@ -360,7 +443,7 @@
                                     <p>Degree</p>
                                 </div>
                             </a>
-                            <a href="https://www.coursera.org/degrees/msee-boulder" class="card section section-2">
+                            <a href="https://www.coursera.org/degrees/msee-boulder" class="card section carousel-item section-2">
                                 <img src="./images/master-5.avif" alt="">
                                 <div class="card-description">
                                     <div class="card-title">
@@ -420,7 +503,7 @@
                                     <p>Degree</p>
                                 </div>
                             </a>
-                            <a href="https://www.coursera.org/degrees/master-of-computer-science-asu" class="card section section-3">
+                            <a href="https://www.coursera.org/degrees/master-of-computer-science-asu" class="card section carousel-item section-3">
                                 <img src="./images/master-10.avif" alt="">
                                 <div class="card-description">
                                     <div class="card-title">
