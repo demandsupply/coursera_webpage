@@ -933,7 +933,7 @@ h1 {
 
 .section-eight {
     width: 1300px;
-    margin: 200px auto;
+    margin: 200px auto 80px auto;
 }
 
 .section-eight h1 {
@@ -998,4 +998,53 @@ h1 {
     width: 650px;
     padding: 50px;
     margin-left: -25px;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #f5f7ff;
+}
+
+footer {
+    width: 1300px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+.footer-one,
+.footer-two {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.column a {
+    width: fit-content;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.footer-two {
+    margin-top: 80px;
+}
+
+.footer-two .column:last-child {
+    height: 520px;
+    justify-content: space-between;
+}
+
+.cert {
+    width: 80px;
 }
