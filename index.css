@@ -1038,13 +1038,45 @@ footer h3 {
 
 .footer-two {
     margin-top: 80px;
+    padding-bottom: 64px;
+    border-bottom: 1.5px solid #ddd;
 }
 
 .footer-two .column:last-child {
     height: 520px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cert {
     width: 80px;
+}
+
+.footer-three {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7ff;
+}
+
+.footer-three p {
+    color: #777;
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.social a {
+    background-color: #000;
+    border-radius: 25px;
+}
+
+.social i {
+    color: white;
+    padding: 8px;
 }
