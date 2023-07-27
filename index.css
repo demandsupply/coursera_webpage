@@ -557,6 +557,7 @@ h1 {
 } 
 
 .experience-container {
+    margin-top: 40px;
     display: flex;
     gap: 12px;
 }
@@ -564,6 +565,7 @@ h1 {
 .experience-container img {
     width: 100px;
     height: fit-content;
+    border-radius: 50px;
 }
 
 .windowb {
