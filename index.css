@@ -120,6 +120,14 @@ p {
     align-items: center;
 }
 
+.fixed-it {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+}
+
 .nav-fixed-a,
 .nav-fixed-b {
     display: flex;

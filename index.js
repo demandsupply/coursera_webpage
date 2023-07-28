@@ -1,3 +1,18 @@
+// Create the fixed sticky nav on scroll
+
+let navbar = document.getElementById("fixed-nav");
+let navOffset = navbar.offsetTop;
+window.addEventListener("scroll", () => {
+    (window.scrollY >= navOffset) ?
+    navbar.classList.add("fixed-it") :
+    navbar.classList.remove("fixed-it");
+    window.scrollTo
+});
+
+// 
+
+// Create the function used to underline the selected item of the menu
+
 function ul(index) {
     console.log('click!' + index)
 
