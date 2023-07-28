@@ -1,4 +1,4 @@
-// Create the fixed sticky nav on scroll
+// Create the fixed sticky second nav on scroll
 
 let navbar = document.getElementById("fixed-nav");
 let navOffset = navbar.offsetTop;
@@ -6,10 +6,30 @@ window.addEventListener("scroll", () => {
     (window.scrollY >= navOffset) ?
     navbar.classList.add("fixed-it") :
     navbar.classList.remove("fixed-it");
-    window.scrollTo
 });
 
-// 
+// Create the function which shows the first nav when scrolling up
+
+// let prevScrollPos = window.scrollY;
+
+// window.addEventListener("scroll", scroll2);
+
+// function scroll2() {
+//     // Current scroll position
+//     let currentScrollPos = window.scrollY;
+
+//     if (prevScrollPos > currentScrollPos) {
+//         // User has scrolled up
+//         document.getElementById("temp-fixed-nav").classList.add("temp-fixed-it");
+//     } else {
+//         // User has scrolled down
+//         this.document.getElementById("temp-fixed-nav").classList.remove("temp-fixed-it");
+//     }
+
+//     // Update previous scroll position
+//     prevScrollPos = currentScrollPos;
+// };
+
 
 // Create the function used to underline the selected item of the menu
 
@@ -26,7 +46,7 @@ function ul(index) {
 const aa = document.querySelector('.aa');
 
 aa.addEventListener('click', () => {
-    aa.style.color = '#000';
+    aa.style.color = 'black';
 });
 
 

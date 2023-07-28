@@ -120,6 +120,14 @@ p {
     align-items: center;
 }
 
+.temp-fixed-it {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: #fff; */
+    z-index: 5;
+}
+
 .fixed-it {
     position: fixed;
     top: 0;
@@ -402,8 +410,25 @@ h1 {
 .section-three {
     width: 1300px;
     margin: auto;
-    height: 2000px;
+    height: 1240px;
 
+}
+
+.section-three .s3-title {
+    margin-top: 56px;
+    margin-bottom: -24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+}
+
+.section-three h2 {
+    font-size: 32px;
+}
+
+.section-three a i {
+    margin-left: 12px;
 }
 
 .careers-menu {
@@ -415,7 +440,7 @@ h1 {
     padding: var(--underline-height) 0;
     margin: 2em 0;
     box-shadow: 0 1em 2em rgba(black, .05);
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .underline-back {
@@ -450,7 +475,7 @@ h1 {
     padding: 1em 0;
     text-align: center;
     cursor: pointer;
-    border-top: 1px solid #000;
+    /* border-top: 1px solid #000; */
 }
 
 .careers-menu p:hover {
@@ -458,7 +483,7 @@ h1 {
     color: #224fe2;
 }
 
-.careers-menu p:focus {
+.careers-menu p:active {
     color: #224fe2;
 }
 
@@ -488,6 +513,16 @@ h1 {
     margin-top: 12px;
     display: flex;
     gap: 24px;
+}
+
+#window-two,
+#window-three,
+#window-four,
+#window-five,
+#window-six,
+#window-seven,
+#window-eight {
+    display: none;
 }
 
 .wtitle {
