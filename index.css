@@ -404,7 +404,7 @@ h1 {
 
 :root {
     --underline-height: .3em;
-    --transition-duration: .5s;
+    --transition-duration: .2s;
 }
 
 .section-three {
@@ -429,6 +429,10 @@ h1 {
 
 .section-three a i {
     margin-left: 12px;
+}
+
+.section-three a:hover {
+    text-decoration: underline;
 }
 
 .careers-menu {
@@ -488,7 +492,7 @@ h1 {
 }
 
 .aa {
-    color: #a01010;
+    color: #224fe2;
 }
 
 .careers-window {

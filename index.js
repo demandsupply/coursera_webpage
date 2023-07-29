@@ -32,22 +32,29 @@ window.addEventListener("scroll", () => {
 
 
 // Create the function used to underline the selected item of the menu
+var color = document.querySelectorAll(".a");
+var numberMenus = document.querySelectorAll(".a").length;
+var lastNumber = 0;
 
 function ul(index) {
     console.log('click!' + index)
-
     var underlines = document.querySelectorAll(".underline-atop");
 
+    // // Remove all previous the colored text 
+    // for (var i =0; i<numberMenus; i++) {
+    //     color[i].classList.remove("aa");
+    // }
+
+    color[lastNumber].classList.remove("aa","u500");
+
+    // Add colored text to the current selected menu
+    color[index].classList.add("aa","u500");
+    lastNumber = index;
+    // Underline the current selected text
     for (var i = 0; i < underlines.length; i++) {
         underlines[i].style.transform = 'translate3d('+ index * 100 + '%,0,0)';
     }
 }
-
-const aa = document.querySelector('.aa');
-
-aa.addEventListener('click', () => {
-    aa.style.color = 'black';
-});
 
 
 // Create the function which show one box and hide the others
