@@ -713,7 +713,11 @@ h1 {
 .section-four-b,
 .section-four-c {
     width: 1300px;
-    margin: auto;
+    margin: 100px auto;
+}
+
+.section-four-a {
+    margin-top: 48px;
 }
 
 .carousel {
@@ -724,6 +728,7 @@ h1 {
 .slides-container {
     margin: 48px auto;
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 33px;
     /* border: 1px solid #000; */
     transition: transform .5s;
@@ -796,7 +801,7 @@ h1 {
     color: #382d8b;
 }
 
-.section-four-a h2,
+.section-four-container h2,
 .section-five h2,
 .section-six h2 {
     font-size: 40px;
@@ -809,36 +814,36 @@ h1 {
     border: 1px solid #efefef;
 }
 
-.section-four-a .card > img {
+.section-four-container .card > img {
     width: 298px;
     border-radius: 8px 8px 0 0;
 }
 
-.section-four-a .card p {
+.section-four-container .card p {
     font-size: 15px;
     color: #777;
 }
 
-.section-four-a .card-description {
+.section-four-container .card-description {
     padding: 20px;
 }
 
-.section-four-a .card-title {
+.section-four-container .card-title {
     display: flex;
     align-items: center;
     margin: 0 0 12px 0;
     gap: 8px;
 }
 
-.section-four-a .card-title img {
+.section-four-container .card-title img {
     border-radius: 4px;
 }
 
-.section-four-a h4 {
+.section-four-container h4 {
     font-size: 22px;
 }
 
-.section-four-a .card-degree {
+.section-four-container .card-degree {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -847,12 +852,17 @@ h1 {
 }
 
 
-.section-four-a .card-degree p {
+.section-four-container .card-degree p {
     color: rgb(32, 119, 186);
     
 }
 
-.section-four-a .exploredegree {
+.section-four-container .card:hover {
+    box-shadow: 0 0 11px rgba(118, 123, 128, 0.25);
+    transition: .2s;
+}
+
+.section-four-container .exploredegree {
     border: 1px solid #000;
     width: fit-content;
     margin: 72px auto 32px auto;
@@ -863,11 +873,11 @@ h1 {
     gap: 12px;
 }
 
-.section-four-a .exploredegree:hover {
+.section-four-container .exploredegree:hover {
     color: #15359f;
 }
 
-.section-four-a .exploredegree:hover strong {
+.section-four-container .exploredegree:hover strong {
     text-decoration: underline;
 }
 
